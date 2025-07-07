@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cloud Photo Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <h1 class="text-3xl font-bold text-center mb-6">📸 Cloud Photo Gallery</h1>
+
+  <div class="flex justify-center mb-4">
+    <input type="file" id="imageInput" class="mr-2 border p-1 bg-white" />
+    <button onclick="uploadImage()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Upload</button>
+  </div>
+
+  <div id="gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-white rounded shadow"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
